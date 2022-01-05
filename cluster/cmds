@@ -41,6 +41,6 @@ cd
 /usr/loacl/hadoop
 bin/hdfs dfs -mkdir /user
 bin/hdfs dfs -mkdir /user/ypm
-bin/hdfs dfs -mkdir /user/input
+bin/hdfs dfs -put /home/ishu/Desktop/data /user/input
 bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.0.jar wordcount /user/input output
 bin/hdfs dfs -cat output/*
