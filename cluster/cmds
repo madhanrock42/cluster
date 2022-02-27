@@ -45,6 +45,10 @@ bin/hdfs dfs -put /home/ishu/Desktop/data /user/input
 bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar wordcount /user/input output
 bin/hdfs dfs -cat output/*
 
+===============================
+localhost:50070
+localhost:8088
+===============================
 
 to delete 
 sudo rm -rf /usr/local/hadoop
