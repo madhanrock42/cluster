@@ -1,18 +1,18 @@
 java -version
 sudo apt update
 sudo apt install openjdk-8-jdk -y
-sudo addgroup groupname
-sudo adduser --ingroup groupname username
-sudo adduser username sudo
+sudo addgroup hadoop
+sudo adduser --ingroup groupname hduser
+sudo adduser hduser sudo
 sudo apt-get install openssh-server
-sudo su - username
+sudo su - hduser
 ssh-keygen -t rsa -P ""
 cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/aithorized_keys
 ssh localhost
 exit
 
 cd  /home/user/Desktop/
-sudo tar -xzvf pakagenme
+sudo tar -xzvf pakagenme.tar.gz
 sudo mv packagename /usr/local/hadoop
 sudo chown -R usernme /usr/local
 sudo nano ~/.bashrc
