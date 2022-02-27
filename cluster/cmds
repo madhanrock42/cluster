@@ -34,11 +34,11 @@ start-yarn.sh
 jps
 
 cd home/user/Desktop/
-mkdir data
+sudo mkdir data
 cd data
 sudo nano sample.txt
 cd
-/usr/local/hadoop
+cd /usr/local/hadoop
 bin/hdfs dfs -mkdir /user
 bin/hdfs dfs -mkdir /user/ypm
 bin/hdfs dfs -put /home/ishu/Desktop/data /user/input
